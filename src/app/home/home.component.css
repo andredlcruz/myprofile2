@@ -1,0 +1,54 @@
+ /* .upside {
+    background: url(../../assets/images/up_new_york.jpg) no-repeat center;
+    color: red; 
+     -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}  */
+
+  .new-york {
+   background: url(../../assets/images/homepage_me.jpg) no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  
+  }
+
+  @-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+  }
+  @keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+  }  
+
+
+  .skill {
+    background-color: #e0e0e0;
+    /* height: 400px; */
+   
+    color: black; 
+  }
+  .skill h4  {
+    padding-top: 25px;
+    text-align: center; 
+    
+  }
+  .subtitle {
+    padding-bottom: 10px; 
+    text-align: center; 
+  }
+  .collection li {
+    background-color: #e0e0e0;
+  }

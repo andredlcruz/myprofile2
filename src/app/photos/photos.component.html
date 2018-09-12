@@ -1,0 +1,19 @@
+
+
+<div class="card-panel">
+  <span class="blue-text text-darken-2"></span>
+</div>
+
+  
+ 
+
+  <div *ngFor="let list of photoList | async">
+  <a class="waves-effect waves-teal btn-flat" (click)="displayPhotoGallery(list?.key)">{{list?.payload.val().gallery }}</a>
+  </div>
+ 
+
+<script>
+ $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+</script>

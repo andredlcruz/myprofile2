@@ -1,0 +1,25 @@
+mat-grid-tile {
+  background: black;
+  color: white; 
+  padding: 2px 16px;
+ 
+}
+mat-grid-tile.info h1 {
+color: red; 
+}
+
+img.camera {
+  max-width:60%;
+  max-height:60%;
+  display: block;
+  margin: auto; 
+}
+
+img.homeicons{
+  max-width:60%;
+  max-height:20%;
+  display: block;
+  margin: auto; 
+}
+
+ 

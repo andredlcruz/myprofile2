@@ -1,0 +1,35 @@
+
+<h3>Employment History</h3>
+
+
+
+<ul class="collapsible" data-collapsible="accordion" materialize="collapsible">
+  <li *ngFor="let item of list | async">
+
+    <div class="collapsible-header">
+      <i class="large material-icons">work</i>
+    <span class="title"> {{item.name}} </span>
+    </div>
+
+    <div class="collapsible-body">  
+       <span class="title">{{item.rank}}</span>
+    <br>
+       <span>{{item.startdate}} - {{item.enddate}}</span>
+      
+ 
+        <ul class="a" style="list-style-type:disc" *ngFor="let x of item?.functions | filterhistory; index as i;">
+         <li> <i class="tiny material-icons left">brightness_1</i> {{x}} </li> 
+       </ul>
+    
+
+    </div>
+  </li>
+
+</ul>
+
+
+<div *ngFor="let skill of skillList | async">
+    <span class="badge">{{skill}}</span>
+</div>
+
+
