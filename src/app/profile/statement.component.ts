@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StatementComponent implements OnInit {
 
+  statement ="Highly motivated with proven skills in project management, problem solving, and managing sensitive information. Current responsibilities include web development, data analyst, and technical support."
+
   constructor() { }
 
   ngOnInit() {

@@ -1,9 +1,47 @@
      
 
 
-<mat-toolbar>
-  <span>{{title}}</span>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper black">
+        <a routerLink="/home" class="brand-logo"><i class="material-icons">home</i>Andre De La Cruz</a>
+        <ul class="right hide-on-med-and-down">
+             <!-- Dropdown Trigger --> 
+          <li><a materialize="dropdown" class='dropdown-button btn black' href='#' data-activates='dropdown1'><i class="material-icons">more_vert</i></a></li>
+
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+
+
+
+
+<!-- Dropdown Structure -->
+<ul id='dropdown1' class='dropdown-content'>
+  <li><a routerLink="/home">Home</a></li>
+  <li><a routerLink="/profile">Profile</a></li>
+  <li class="divider"></li>
+  <li><a routerLink="/photos">Photos</a></li>
+</ul>
+<!-- <mat-toolbar>
+  <span>{{title}}</span>
 
   <span class="example-fill-remaining-space"></span>
       <mat-menu #appMenu="matMenu">
@@ -15,7 +53,7 @@
    <mat-icon>more_vert</mat-icon>
 </button>
  
-</mat-toolbar>
+</mat-toolbar> -->
 
 
 
@@ -23,3 +61,4 @@
 
 <router-outlet></router-outlet>
 
+<script>$(".dropdown-trigger").dropdown();</script>
