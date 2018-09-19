@@ -1,10 +1,28 @@
 
 
 <br/>  <br/>
-  <div *ngFor="let list of photoList | async">
-  <a class="waves-effect waves-teal btn-flat" (click)="displayPhotoGallery(list?.key)">{{list?.payload.val().gallery }}</a>
-  </div>
+
+
+
+
  
+ 
+  
+  <div class="container">
+      <h1 class="aligntext-center">{{gallery}}</h1>
+  <div class="collection"  *ngFor="let list of photoList | async">
+      <a href="javascript:void(0)" class="collection-item" (mouseover)='gallery=list?.payload.val().gallery'    (click)="displayPhotoGallery(list?.key)">
+        <span class="badge">{{ (list?.payload.val().photos) | count }} photos</span>{{list?.payload.val().gallery }}</a>
+     
+  </div>      
+ 
+
+
+
+
+
+
+
 
 <script>
  $(document).ready(function(){

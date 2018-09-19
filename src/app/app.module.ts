@@ -39,6 +39,8 @@ import { ReversePipe } from './reverse.pipe';
 import { FilterhistoryPipe } from './filterhistory.pipe';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { AngularFireDatabase } from '@angular/fire/database';
+import { CountPipe } from './count.pipe';
+
 
 
 
@@ -67,7 +69,7 @@ const appRoutes: Routes =[
     StatementComponent, 
     ContactComponent,
     PhotosComponent,  PhotogalleryComponent,
-    DashboardComponent, ReversePipe, FilterhistoryPipe 
+    DashboardComponent, ReversePipe, FilterhistoryPipe, CountPipe
   ],
   imports: [
     BrowserModule, MaterializeModule, MatButtonModule, MatCardModule, MatMenuModule,
